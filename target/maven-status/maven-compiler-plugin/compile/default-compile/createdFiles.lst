@@ -1,0 +1,5 @@
+com/rit/somnilog/backend/config/SecurityConfig.class
+com/rit/somnilog/backend/entity/User.class
+com/rit/somnilog/backend/BackendApplication.class
+com/rit/somnilog/backend/controller/AuthController.class
+com/rit/somnilog/backend/repository/UserRepository.class
