@@ -18,7 +18,7 @@ public class LoginLogController {
     private LoginLogRepository loginLogRepository;
 
     @GetMapping
-    @PreAuthorize("hasRole('ADMIN')") // ✅ Only admins can access this
+    @PreAuthorize("hasRole('ADMIN')") //  Only admins can access this
     public ResponseEntity<List<LoginLog>> getAllLoginLogs() {
         return ResponseEntity.ok(loginLogRepository.findAll());
     }
