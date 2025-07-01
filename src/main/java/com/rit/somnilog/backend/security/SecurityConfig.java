@@ -33,7 +33,7 @@ public class SecurityConfig {
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/api/tags/**").permitAll()
                         .requestMatchers("/api/dreams/**").authenticated()
-                        .requestMatchers("/api/login-logs/**").hasRole("ADMIN")  // 🔒 Only for admins
+                        .requestMatchers("/api/login-logs/**").hasRole("ADMIN")  //  Only for admins
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
